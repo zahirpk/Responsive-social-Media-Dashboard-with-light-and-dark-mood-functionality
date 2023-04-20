@@ -109,7 +109,9 @@ main {
   border-top: 5px solid #00aee0;
   text-align: center;
 }
-
+.youtube-border-top-color{
+  border-top: 5px solid #e00000!important;
+}
 .total-count:hover,.daily-count:hover,.instagram:hover{
 
   background-color: var(--card-bg-color-active);
