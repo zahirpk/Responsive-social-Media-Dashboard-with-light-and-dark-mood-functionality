@@ -350,5 +350,6 @@ main {
   }
   .daily-count {
     height: 100px;
+    margin-bottom: 0px;
   }
 }
