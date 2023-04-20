@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*  */
+:root {
+  --text-color: #2c2c2c;
+  --bg-color: #fff;
+  --card-bg-color: hsl(227, 47%, 96%);
+  --card-bg-color-active: hsl(226, 37%, 88%);
+}
+
+.dark-theme {
+  --text-color: #FFF;
+  --bg-color: linear-gradient(180deg, #191926 30%, #10101a 0);
+  --card-bg-color: hsl(228, 28%, 20%);
+  --card-bg-color-active: hsl(227, 29%, 32%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.25em;
+  font-weight: 700;
+  background-color: var(--card-bg-color);
+  padding: 1rem 2rem;
+}
+
+p {
+  font-size: 0.75em;
+  font-weight: 400;
+  color: gray;
+  padding-bottom: 1rem;
+}
+
+.radio-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  color: gray;
+  border-top: 1px solid gray;
+}
+
+/* light and dark mood button */
+input[type="checkbox"]{
+  display: none;
+}
+label{
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+  height: 15px;
+  background-color: var(--text-color);
+  border-radius: 50px;
+}
+label:before{
+
+  content: '';
+  position: relative;
+  left: 1px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--card-bg-color);
+  width: 13px;
+  height: 13px;
+  border-radius: 50px;
+  transition: transform 0.5s ease;
+}
+input[type="checkbox"]:checked + label:before{
+
+  transform: translateX(19.5px);
+  background-color: var(--text-color);
+  
+}
+input[type="checkbox"]:checked + label{
+
+  background: linear-gradient(to right ,hsl(184, 97%, 49%), hsl(66, 85%, 53%));
+
+  
+}
+
+/* Button end  */
+
+main {
+  margin: 0rem 2rem;
+}
+
+.total-count {
+  width: 100%;
+  height: 200px;
+  background-color: var(--card-bg-color);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border-top: 5px solid #00aee0;
+  text-align: center;
+}
+
+.total-count:hover,.daily-count:hover,.instagram:hover{
+
+  background-color: var(--card-bg-color-active);
+  cursor: pointer;
+}
+.logo-with-user-name,
+.daily-counter,.daily-percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.logo-with-user-name img {
+  width: 100%;
+}
+
+.user-name {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.counter-number {
+  font-size: 3.25em;
+}
+
+.followers-subscribers {
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.arrow-sign {
+  padding-bottom: 15px;
+}
+
+.today-text {
+  font-size: 1em;
+  color: HSL(163, 72%, 41%);
+  font-weight: 700;
+}
+.today-text-with-red-color{
+
+  color: hsl(356, 69%, 56%)!important;
+}
+.instagram{
+
+  width: 100%;
+  height: 198px;
+  background-color: var(--card-bg-color);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-bottom: 1rem;
+  top: 3px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+ 
+}
+.instagram::after{
+  content: "";
+  width: 100%;
+  height: 3.5px;
+  background: linear-gradient(to right ,hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  top: -5.3px;
+  margin-top: .15rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px; 
+}
+/* Rectangle-boxes */
+
+.overview-text {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.daily-count {
+  width: 100%;
+  height: 100px;
+  background-color: var(--card-bg-color);
+  margin-bottom: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+.daily-page-views,.daily-change{
+  display:flex;
+  justify-content: space-between;
+}
+.daily-change{
+  margin-top: 0.25rem 0.5rem;
+  align-items: center;
+}
+.daily-views-or-likes-or-subscribers{
+  font-size: 0.85em;
+  font-weight: 700;
+}
+.daily-up-down{
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.arrow-up-symbol{
+
+  padding-bottom: 20px;
+  margin-right: 0.1rem;
+}
+.percentage-up-down{
+    font-size: 0.75em;
+    color: HSL(163, 72%, 41%);
+    font-weight: 700;
+}
+@media(min-width:25em) {
+  main {
+    margin: 0rem 3rem;
+  }
+}
+
+@media(min-width:40em) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 5rem 2rem;
+  }
+  .radio-button {
+    border: none;
+  }
+  main {
+    margin: 0rem 2rem;
+    position: relative;
+    bottom: 80px;
+  }
+  .square-boxes,
+  .rectangle-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 5px;
+  }
+  .total-count {
+    height: 150px;
+    margin-bottom: 0.75rem;
+  }
+  .instagram{
+    height: 147px;
+  }
+  .counter-number {
+    font-size: 2em;
+  }
+  .followers-subscribers {
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+  }
+.daily-counter{
+  margin-top: 0;
+}
+  .today-text {
+    font-size: 0.75em;
+    padding-top: 5px;
+  }
+  .overview-text {
+    margin-top: 0.5rem;
+  }
+  .daily-count {
+    height: 90px;
+  }
+  .daily-views-or-likes-or-subscribers{
+    font-size: 0.5em;
+  }
+  .daily-up-down{
+    font-size: 1em;
+  }
+}
+
+@media(min-width: 60em) {
+  header {
+    padding: 2rem 9rem 5rem 8rem;
+  }
+.title-text{
+  font-size: 1.5em;
+}
+.title-text p{
+
+  font-size: 1em;
+}
+.radio-button p{
+  font-size: .75em;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+  main {
+    margin: 0rem 8rem;
+  }
+  .square-boxes,
+  .rectangle-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+  }
+  .logo img {
+    width: 80%;
+  }
+  .total-count {
+    height: 200px;
+    margin-bottom: 0rem;
+  }
+  .instagram{
+    height: 197px;
+  }
+  .counter-number {
+    font-size: 3.5em;
+  }
+  .followers-subscribers {
+    font-size: 1.25em;
+    letter-spacing: 5px;
+    padding-bottom: 1.25rem;
+  }
+  .today-text {
+    font-size: 0.85em;
+    margin-left: 0.2rem;
+  }
+  .daily-views-or-likes-or-subscribers{
+    font-size: 0.85em;
+  }
+  .daily-up-down{
+    font-size: 1.75em;
+  }
+  .overview-text {
+    margin-top: 1.5rem;
+  }
+  .daily-count {
+    height: 100px;
+  }
+}

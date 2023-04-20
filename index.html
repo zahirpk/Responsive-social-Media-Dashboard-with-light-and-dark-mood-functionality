@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="title-text"> Social Media Dashboard
+      <p>Total Followers: 23,004</p>
+    </div>
+    <div class="radio-button">
+      <p> Dark Mode</p>
+      <div class="myBtn"><input type="checkbox" id="toggle-button" onclick="myFunction()">
+        <label for="toggle-button"></label>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="square-boxes">
+      <div class="total-count">
+        <div class="logo-with-user-name">
+          <div class="logo"><img src="images/icon-facebook.svg" alt="facebook-logo"></div>
+          <p class="user-name"> @nathanf</p>
+        </div>
+        <h1 class="counter-number">1987</h1>
+        <p class="followers-subscribers"> Followers</p>
+        <div class="daily-counter">
+          <div class="arrow-sign"><img src="images/icon-up.svg" alt="arrow-up"></div>
+          <p class="today-text">12 Today</p>
+        </div>
+      </div>
+      <div class="total-count">
+        <div class="logo-with-user-name">
+          <div class="logo"><img src="images/icon-twitter.svg" alt="twitter-logo"></div>
+          <p class="user-name"> @nathanf</p>
+        </div>
+        <h1 class="counter-number">1044</h1>
+        <p class="followers-subscribers"> Followers</p>
+        <div class="daily-counter">
+          <div class="arrow-sign"><img src="images/icon-up.svg" alt="arrow-up"></div>
+          <p class="today-text">99 Today</p>
+        </div>
+      </div>
+      <div class="instagram">
+        <div class="logo-with-user-name">
+          <div class="logo"><img src="images/icon-instagram.svg" alt="instagram-logo"></div>
+          <p class="user-name"> @realnathanf</p>
+        </div>
+        <h1 class="counter-number">11k</h1>
+        <p class="followers-subscribers"> Followers</p>
+        <div class="daily-counter">
+          <div class="arrow-sign"><img src="images/icon-up.svg" alt="arrow-up"></div>
+          <p class="today-text">1099 Today</p>
+        </div>
+      </div>
+      <div class="total-count">
+        <div class="logo-with-user-name">
+          <div class="logo"><img src="images/icon-youtube.svg" alt="youtube-logo"></div>
+          <p class="user-name"> Nathan F.</p>
+        </div>
+        <h1 class="counter-number">8239</h1>
+        <p class="followers-subscribers"> Followers</p>
+        <div class="daily-counter">
+          <div class="arrow-sign"><img src="images/icon-down.svg" alt="arrow-down"></div>
+          <p class="today-text  today-text-with-red-color">144 Today</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="overview-text">Overview Today</h1>
+    <div class="rectangle-boxes">
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Page Views</p>
+          <div class="logo"><img src="images/icon-facebook.svg" alt="facebook"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">87</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down">3%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Likes</p>
+          <div class="logo"><img src="images/icon-facebook.svg" alt="facebook"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">52</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-down.svg" alt="arrow-down"></div>
+            <p class="percentage-up-down today-text-with-red-color">2%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Likes</p>
+          <div class="logo"><img src="images/icon-instagram.svg" alt="instagram-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">5462</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down">2257%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Profile Views</p>
+          <div class="logo"><img src="images/icon-instagram.svg" alt="instagram-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">52K</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down">1375%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Retweets</p>
+          <div class="logo"><img src="images/icon-twitter.svg" alt="twitter-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">117</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down">303%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Likes</p>
+          <div class="logo"><img src="images/icon-twitter.svg" alt="twitter-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">507</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down">553%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Likes</p>
+          <div class="logo"><img src="images/icon-youtube.svg" alt="youtube-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">107</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-down.svg" alt="arrow-down"></div>
+            <p class="percentage-up-down  today-text-with-red-color">19%</p>
+          </div>
+        </div>
+      </div>
+      <div class="daily-count">
+        <div class="daily-page-views">
+          <p class="daily-views-or-likes-or-subscribers">Total Views</p>
+          <div class="logo"><img src="images/icon-youtube.svg" alt="youtube-logo"></div>
+        </div>
+        <div class="daily-change">
+          <p class="daily-up-down">1407</p>
+          <div class="daily-percentage">
+            <div class="arrow-up-symbol"><img src="images/icon-up.svg" alt="arrow-up"></div>
+            <p class="percentage-up-down  today-text-with-red-color">12%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
